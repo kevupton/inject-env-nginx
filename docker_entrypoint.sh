@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -z "$VAR" ];
+if [ ! -z "$INJECT_ENVS_FILE" ];
 then
   inject-envs $INJECT_ENVS_FILE
 fi
