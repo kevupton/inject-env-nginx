@@ -1,7 +1,7 @@
 # base image
 FROM nginx:1.16.0-alpine
 
-RUN apk add --update nodejs npm
+RUN apk add --update nodejs npm bash
 RUN npm i -g env-injector
 
 ADD docker_entrypoint.sh /bin/
